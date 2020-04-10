@@ -49,13 +49,3 @@ def bubbleSort(list):
                 temp=list[j]
                 list[j],list[j+1]=list[j+1],temp
     return list
-
-def median(list):
-    list=bubbleSort(list)
-    if len(list)%2==1:
-        mid = int(len(list)/2)+1
-        return list[mid-1]
-    else:
-        mid1,mid2=list[int(len(list)/2)],list[int(len(list)/2)-1]
-        return (mid1+mid2)/2
-
