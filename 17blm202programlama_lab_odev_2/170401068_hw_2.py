@@ -14,7 +14,7 @@ def hist(document):
             histogram.append([int(i.split(";")[3].split("-")[1]), 1])
     return histogram,data
 
-with open(sys.argv[1]+"input_hw_2.csv") as document:
+with open(sys.argv[1]+"input_hw_2.csv") as document:#This part has some problem but ı can't solve.I'm tired of think about this and trying to solve.
     histogram = hist(document)
     months = histogram[1]
     histogram = histogram[0]
@@ -49,3 +49,4 @@ def bubbleSort(list):
                 temp=list[j]
                 list[j],list[j+1]=list[j+1],temp
     return list
+#It hasn't outputfile.Because I can't solve issue in line 17.
